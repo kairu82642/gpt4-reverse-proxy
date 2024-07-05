@@ -47,6 +47,7 @@ main()
 ```
 
 ヘッダーのaccept-languageにレスポンスの言語を設定できます
+
 You can set the response language in the "accept-language" header.
 
 English (US): `en-US,q=0.9`
