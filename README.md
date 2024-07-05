@@ -12,7 +12,7 @@ Chat SmithというiOSのアプリがあるのですがそこでGPT-4の抜け�
 自分で自分の脆弱性を言う素晴らしいAI (OpenAIのAPIだから)
 
 
-sample
+サンプル
 ```js
 const fetch = require("node-fetch")
 
@@ -30,7 +30,7 @@ async function main() {
         method: "POST",
         headers: {
             'Content-Type': 'application/json',
-            "accept-language": "en-US,en;q=0.9",
+            "accept-language": "ja-JP,ja;q=0.9",
         },
         body: JSON.stringify({ messages })
     })
@@ -45,3 +45,10 @@ async function main() {
 
 main()
 ```
+
+ヘッダーのaccept-languageにレスポンスの言語を設定できます
+You can set the response language in the "accept-language" header.
+
+English (US): `en-US,q=0.9`
+Japanese: `ja-JP,ja;q=0.9`
+Korean: `ko,q=0.9`
